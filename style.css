@@ -1,0 +1,219 @@
+@import url("https://fonts.cdnfonts.com/css/dune-rise");
+
+:root {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Dune Rise", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: gold;
+  align-self: self-end;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glow {
+  text-align: center;
+  color: rgb(248, 232, 143);
+  text-shadow: 0 0 5px rgba(255, 217, 0, 0.5), 0 0 5px rgba(255, 217, 0, 0.5),
+    0 0 5px rgba(255, 217, 0, 0.5), 0 0 5px rgba(255, 217, 0, 0.5);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("./assets/image.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-content {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.img-wrapper {
+  max-width: 500px;
+  border-radius: 1rem;
+}
+
+.question-answer {
+  display: grid;
+  gap: inherit;
+  max-width: fit-content;
+  justify-items: center;
+}
+
+.question {
+  color: white;
+  padding: 2rem 0;
+  font-size: 1.25rem;
+}
+
+.answers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+  gap: 0.5rem;
+}
+
+.answers > button {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.home-box {
+  display: grid;
+  height: 50%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border: 1px solid gold;
+  border-radius: 8rem;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: whitesmoke;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+  align-self: center;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  background-color: rgb(36, 36, 36);
+  color: gold;
+}
+
+#wrong-answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.answer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.incorrect,
+.correct {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.incorrect {
+  background-color: rgba(2, 2, 2, 0.591);
+  color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 0 20px rgba(255, 217, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.correct {
+  background-color: ivory;
+  color: rgba(0, 0, 0, 0.87);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 5px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3),
+    inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(241, 218, 82);
+  box-shadow: inset 0 0 5px rgba(255, 217, 0, 0.5),
+    0 0 5px rgba(255, 217, 0, 0.5), inset 0 0 5px rgba(255, 217, 0, 0.5),
+    0 0 5px rgba(255, 217, 0, 0.5);
+}
+
+#bar {
+  font-size: 1.5rem;
+  transition: width 0.5s ease-in-out;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2.25%;
+  color: gold;
+  background-color: green;
+  box-shadow: inset 0 0 10px rgba(0, 255, 60, 0.708),
+    inset 0 0 5px rgb(25, 229, 25);
+}
+
+#score-container {
+  display: none;
+}
+
+input.form-control {
+  width: 15rem;
+}
+
+.success {
+  background-color: #000000;
+  border-color: gold;
+}
+
+@media (max-width: 768px) {
+  .incorrect,
+  .correct {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .incorrect,
+  .correct {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}

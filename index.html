@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dune Trivia Quiz</title>
+    <link href="https://fonts.cdnfonts.com/css/dune-rise" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="home-box">
+        <h1 class="glow">DUNE</h1>
+        <h2>The Quiz</h2>
+        <button class="btn" onclick="scrollNext('question1')">Play</button>
+      </div>
+    </div>
+    <div class="container" id="question1">
+      <div class="container-content">
+        <div class="img-wrapper">
+          <img
+            src="./assets/paul.jpg"
+            class="Paul Atreides Saluting with Crysknife"
+            alt="Quiz Image"
+            width="394"
+            height="252"
+          />
+        </div>
+        <div class="question-answer">
+          <p class="question">What is Paul's Sietch name?</p>
+          <div class="answers" onclick="scrollNext('question2')">
+            <button class="btn">Muad'Dib</button>
+            <button class="btn">Usul</button>
+            <button class="btn">Sihaya</button>
+            <button class="btn">Liet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question2">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s5wWQ_KE0-sNdCjuCIGG-gUlO3g2dsw8JoHbBJXbciMeNTxXqpINdsbX5zJr9s0Qudck0vfKqI9wKWTFPJ4qZaToHQCWKB-yohoJjtsx7FAdc84wiqqZnmQ4AEn295jf_XKO1RzfAXBkLkrfq9nLH-zDU=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>What is it that the Fremen call the worms on Dune?</h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question3', 'q2', 'Shai-Hulud')"
+          >
+            Shai-Hulud
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question3', 'q2', 'Bonegrinders')"
+          >
+            Bonegrinders
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question3', 'q2', 'Graboids')"
+          >
+            Graboids
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question3', 'q2', 'The Deathworms of Arrakis')"
+          >
+            The Deathworms of Arrakis
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question3">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uVk2oB0vBXy-BCV7wImZtFqawh_FA0U9t3dOIaYskm_Utlk_hlKTt5uvRg2gLalJAC7bwmQ9GwAex0gLCWhkRfsW_0h5_e_GmW0qMwBW1NxFYqXiYo7qQME2Z3Pm-d1keXwCGxKP-6lW8L6PTJYRudtePKrnU3=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>How many sisters does Princess Irulan have?</h2>
+
+      <div>
+        <div>
+          <button class="btn" onclick="scrollAndSet('question4', 'q3', 'One')">
+            One
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question4', 'q3', 'Three')"
+          >
+            Three
+          </button>
+        </div>
+        <div>
+          <button class="btn" onclick="scrollAndSet('question4', 'q3', 'Six')">
+            Six
+          </button>
+          <button class="btn" onclick="scrollAndSet('question4', 'q3', 'Four')">
+            Four
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question4">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sBwUIUF0zZJWyMY07JmC4dPoC_CasxMPJFC6FSEWwrLWwg_3Cal0HeNjQpV6kBnhwmYoalTlSgx3WjqztpdyhJn7tQ65v_RulosdqivvmwerK1EDPpH0Q-T8RDEKZ5GLBsZ2wQvDjOA6FA4M9zSjOMiF2cuYm3Jw=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>Which order does Lady Jessica belong to?</h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question5', 'q4', 'House Atreides')"
+          >
+            House Atreides
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question5', 'q4', 'The Bene Gesserit Sisterhood')"
+          >
+            The Bene Gesserit Sisterhood
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question5', 'q4', 'The Ixian Confederacy')"
+          >
+            The Ixian Confederacy
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question5', 'q4', 'The Bene Tleilax')"
+          >
+            The Bene Tleilax
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question5">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_uI5UUToO8x0WH-j2DxgzMPwHnyhoI9hTlvcixG1WIHSRDxWHupFgRh685e-iQhEbB599In19JE93HBt3LvXoDiEp04155_onA0lh-PXIYktjJtE9l0bA1pVDvGovB6j3S9B2hxj9tg6Dt4iIrLBtiZv2kx5Q=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>
+        When House Atreides falls, what occupation does Gurney Halleck take up?
+      </h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question6', 'q5', 'Spice merchant')"
+          >
+            Spice merchant
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question6', 'q5', 'Mercenary')"
+          >
+            Mercenary
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question6', 'q5', 'Musician')"
+          >
+            Musician
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question6', 'q5', 'Smuggler')"
+          >
+            Smuggler
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question6">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vkAjZtrJ_H7HDgcJzm5y4rkdeUKZqPbL7lM1nS_oBCJGk2EqcyL5YQwX-ZXgAgy8FRiWUYNopeeC_ksPPHdeD25kRmeO9aNZjYT3dmiUSujEkWi7by2yXIOiPzRTPA5VxxChY_9HCZkI7c4DuPIQ=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>Which Sietch does Stilgar rule over?</h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question7', 'q6', 'Sietch Jacurutu')"
+          >
+            Sietch Jacurutu
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question7', 'q6', 'Sietch Gara Kulon')"
+          >
+            Sietch Gara Kulon
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question7', 'q6', 'Sietch Tabr')"
+          >
+            Sietch Tabr
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question7', 'q6', 'Sietch Umbu')"
+          >
+            Sietch Umbu
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question7">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_sb-giqMoGhkDUej3-E3Xuy5PNzj6KphpTWWejiVgZU7NVzLo6okA2ho5S9-YqOvaWoQQHmGsEfd13xVQ5v0I20xYcX25gTXnLSatz6MBRIlnKRy9pEfG351JgQk1HzN3VJNK1sX_Gaf4xjZaJ7b5aPQFiplkOV0aWONKIy79if_xJCc5dQEsvx756NQGbpRAQBs-LyewU=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>
+        Who offered themselves as Paul's champion in combat with Feyd Rautha?
+      </h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question8', 'q7', 'Gurney Halleck')"
+          >
+            Gurney Halleck
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question8', 'q7', 'Stilgar')"
+          >
+            Stilgar
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question8', 'q7', 'Chani')"
+          >
+            Chani
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question8', 'q7', 'Otheym')"
+          >
+            Otheym
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question8">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_t1sP5iC6LoLXhOzQ7tKrKiKVjXxHvjmEG1XIi3CsfaPMk_ZZ3MvTjQ0rgiDFvmzul1Ko4FJqLMTAaXflAyNj-J379GvMS_W14EvAqlWTtjfbGed9sJgaxTB6R1TS01ya-Wy5Df3OE2pHwUemqnkPw3FW6WR3XS-6bh0acF_wFY76Qf9SM_D_y-5g=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>What tool is needed to ride a sandworm?</h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question9', 'q8', 'Maker hooks')"
+          >
+            Maker hooks
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question9', 'q8', 'Claw hands')"
+          >
+            Claw hands
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question9', 'q8', 'The Gom Jabbar')"
+          >
+            The Gom Jabbar
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question9', 'q8', 'A Dictatel')"
+          >
+            A Dictatel
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question9">
+      <div>
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIiq6VYOyC36ZytTxWX2YGCtGY820S7KdQNAAHjLcNBBvjBzv_lWAE9q5ZcO5TruLhhOLUEFBVdtdCldYSZAN_nOjDslrxheWljBUwzRcez9oQ6WBP8l7CfOU1CIkcE0aXKVC81h_5X4NR/w919-h516-p-k-no-nu/dune-2021-movie-zendaya-chani-4k-uhdpaper.com-108.0_c-thumbnail.jpg"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>What event leads to Chani's death?</h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question10', 'q9', 'Battle')"
+          >
+            Battle
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question10', 'q9', 'Childbirth')"
+          >
+            Childbirth
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question10', 'q9', 'Assassination')"
+          >
+            Assassination
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('question10', 'q9', 'Heat Stroke')"
+          >
+            Heat Stroke
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question10">
+      <div>
+        <img
+          src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_t5ygpuazDzO2egWVWgrNjmDLQl03K9XxHTb0iTx9gP3q8FpUa0bvv2j31WvailQPi30fubQuggSPwlo4ccg5N47jqlCVuuu_qM4mj4oNnJ_pg-LJBtRsa5GjFW6Wi-LntouqBOTOE=w919-h516-p-k-no-nu"
+          class="image"
+          alt="Quiz Image"
+        />
+      </div>
+
+      <h2>
+        What commodity makes Dune the most valuable planet in the Universe?
+      </h2>
+
+      <div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('score-container', 'q10', 'Melange')"
+          >
+            Melange
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('score-container','q10', 'Water of Life')"
+          >
+            Water of Life
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn"
+            onclick="scrollAndSet('score-container','q10', 'Plasteel')"
+          >
+            Plasteel
+          </button>
+          <button
+            class="btn"
+            onclick="scrollAndSet('score-container','q10', 'Ridulian Crystals')"
+          >
+            Ridulian Crystals
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="score-container"></div>
+      <h2 class="glow" id="score"></h2>
+      <div class="glow" id="wrong-answers"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
